@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* GÉNÉRAL */
+
+body {
+  margin: 0px;
+  font-family: "Montserrat", serif;
+}
+
+/* HEADER */
+
+header {
+  text-align: center;
+  background-image: linear-gradient(
+      rgba(0, 128, 128, 0.2),
+      rgba(0, 128, 128, 0.2)
+    ),
+    url("Images/header_image.avif");
+  height: 300px;
+  color: white;
+  background-size: cover;
+}
+
+header h1 {
+  font-size: 80px;
+  margin: 0;
+  font-weight: 800;
+  font-style: italic;
+}
+
+header img {
+  justify-content: end;
+  width: 60px;
+}
+
+header p {
+  font-weight: 800;
+  font-size: 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  margin: 5px;
+}
+
+header a:last-child {
+  padding: 10px;
+  background-color: #008080;
+}
+
+header a:last-child:hover {
+  background-color: rgb(0, 51, 102);
+}
+
+#containHeader {
+  display: flex;
+  justify-content: end;
+}
+
+@media (max-width: 600px) {
+  header {
+    height: 12rem;
+    background-image: linear-gradient(
+        0.25turn,
+        rgba(0, 128, 128, 0.2),
+        rgba(0, 26, 26, 0.716)
+      ),
+      url("Images/header_image.avif");
+  }
+
+  header h1 {
+    font-size: 30px;
+  }
+
+  header img {
+    width: 50px;
+  }
+
+  header p {
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  header a {
+    font-size: 13px;
+  }
+
+  header a:last-child {
+    padding: 5px;
+  }
+}
+
+/* MAIN SECTION MINI IMAGE MAISON ET P  */
+
+#houseImgContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 80px 0px;
+}
+
+#houseImgContainer img {
+  width: 350px;
+  height: 300px;
+}
+
+#houseImgContainer h2 {
+  color: #008080;
+}
+
+#houseImgContainer p {
+  color: #008080;
+}
+
+#houseImgContainer h2 {
+  margin: 120px 0px 0px -80px;
+  text-decoration: underline;
+}
+
+#houseTitleTextContainer {
+  width: 500px;
+  margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+  #houseImgContainer {
+    margin: 60px 0px;
+  }
+
+  #houseImgContainer img {
+    height: 250px;
+  }
+
+  #houseTitleTextContainer {
+    text-align: center;
+  }
+
+  #houseTitleTextContainer h2 {
+    margin: 50px 0px 20px 0px;
+    font-size: 18px;
+  }
+
+  #houseTitleTextContainer p {
+    font-size: 10px;
+    margin: 0px 20px;
+  }
+}
+
+/* MAIN SECTION LOGOS */
+
+#houseSelectionIcons {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+
+#houseSelectionIcons ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+#houseSelectionIcons ul li img {
+  width: 50px;
+}
+
+#houseSelectionIcons ul li {
+  list-style: none;
+  border: #f0f0f0 solid 1px;
+  padding: 30px 250px;
+  /* J'ai compris qu'il fallait faire un calcul ici mais je perdais trop de temps à le chercher. */
+}
+
+@media (max-width: 600px) {
+  #houseSelectionIcons ul li {
+    padding: 0px 120px;
+    /* Même chose ici */
+  }
+
+  #houseSelectionIcons ul li p {
+    font-size: 10px;
+  }
+
+  #houseSelectionIcons ul li img {
+    width: 40px;
+  }
+}
+
+/* MAIN SECTION AVEC IMAGE DE FOND */
+
+#imageCoverContainer {
+  margin: 0;
+  background-image: linear-gradient(
+      rgba(0, 128, 128, 0.27),
+      rgba(0, 128, 128, 0.2)
+    ),
+    url(./images/main_image.avif);
+  background-position: center;
+  height: 400px;
+  color: white;
+  display: flex;
+  justify-content: end;
+}
+
+#imageSubDivision {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  align-items: end;
+  padding: 50px 300px 50px 50px;
+}
+
+#imageParagraphAndAnchor {
+  height: 200px;
+}
+
+#imageParagraphAndAnchor a {
+  text-decoration: none;
+  color: white;
+  background-color: #008080;
+  padding: 10px;
+  margin-top: 20;
+}
+
+#imageParagraphAndAnchor a:hover {
+  background-color: rgb(0, 51, 102);
+}
+
+@media (max-width: 600px) {
+    #imageSubDivision {
+        padding: 0;
+        align-items: center;
+    }
+    
+}
+
+/* MAIN SECTION STATS */
+
+#houseMarketBox {
+  display: flex;
+  margin: 50px 0px 80px 150px;
+}
+
+#housingMarketStats {
+}
+
+#housingMarketStats h2 {
+  font-size: 30px;
+  color: #008080;
+}
+
+#paragraphFlexing {
+  display: flex;
+}
+
+.chiffres {
+  font-size: 50px;
+  font-weight: 700;
+  color: #003366;
+}
+
+#houseParagraphAndAnchor a {
+  padding: 10px;
+  background-color: #008080;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+}
+
+#houseParagraphAndAnchor a:hover {
+  background-color: rgb(0, 51, 102);
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #20232a;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  font-size: 15px;
+  padding: 50px 0px;
+}
+
+footer img {
+  height: 70px;
+  padding-top: 20px;
+}
+
+#footerListDiv {
+  display: flex;
+  padding: 0px 100px;
+}
+
+#footerListDiv ul {
+  width: 500px;
+}
+
+#footerListDiv ul li {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#footerListDiv ul li h3 {
+  color: #008080;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+#footerLogoAndParagraph {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 100px;
+}
