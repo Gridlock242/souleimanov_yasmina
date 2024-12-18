@@ -15,7 +15,7 @@ header {
       rgba(0, 128, 128, 0.2),
       rgba(0, 128, 128, 0.2)
     ),
-    url("Images/header_image.avif");
+    url(./images/header_image.avif);
   height: 300px;
   color: white;
   background-size: cover;
@@ -66,7 +66,7 @@ header a:last-child:hover {
         rgba(0, 128, 128, 0.2),
         rgba(0, 26, 26, 0.716)
       ),
-      url("Images/header_image.avif");
+      url(./images/header_image.avif);
   }
 
   header h1 {
@@ -228,11 +228,39 @@ header a:last-child:hover {
 }
 
 @media (max-width: 600px) {
-    #imageSubDivision {
-        padding: 0;
-        align-items: center;
-    }
-    
+  #imageSubDivision {
+    padding: 0;
+    align-items: center;
+  }
+
+  #imageCoverContainer {
+    height: 250px;
+    background-image: linear-gradient(
+        0.25turn,
+        rgba(0, 128, 128, 0.455),
+        rgba(0, 168, 168, 0.2)
+      ),
+      url(./images/main_image.avif);
+    background-size: cover;
+  }
+
+  #imageSubDivision h2 {
+    font-size: 15px;
+    margin-top: 50px;
+  }
+
+  #imageCoverContainer {
+    font-size: 13px;
+  }
+
+  #imageParagraphAndAnchor {
+    text-align: center;
+  }
+
+  br {
+    display: none;
+  }
+
 }
 
 /* MAIN SECTION STATS */
@@ -270,6 +298,21 @@ header a:last-child:hover {
 
 #houseParagraphAndAnchor a:hover {
   background-color: rgb(0, 51, 102);
+}
+
+@media (max-width: 600px) {
+    #houseMarketBox {
+        margin: 0;
+    }
+
+    #housingMarketStats {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    #housingMarketStats h2 {
+        font-size: 20px;
+    }
 }
 
 /* FOOTER */
@@ -313,4 +356,29 @@ footer img {
   display: flex;
   flex-wrap: wrap;
   padding: 0px 100px;
+}
+
+@media (max-width: 600px) {
+    footer {
+        font-size: 12px;
+    }
+
+    #footerListDiv {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #footerListDiv ul {
+        width: 200px;
+    }
+
+    #footerListDiv ul li h3 {
+        font-size: 12px;
+      }
+
+    #footerLogoAndParagraph {
+        padding: 0;
+        align-items: center;
+    }
 }
